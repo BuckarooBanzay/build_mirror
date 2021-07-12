@@ -13,10 +13,10 @@ minetest.register_chatcommand("mirror_here", {
             return false, "not a valid player: " .. name
         end
 
-        local player_data = build_mirror[name]
+        local player_data = build_mirror.mirrors[name]
         if not player_data then
             player_data = {}
-            build_mirror[name] = player_data
+            build_mirror.mirrors[name] = player_data
         end
 
         player_data.pos = vector.round(player:get_pos())
@@ -31,7 +31,7 @@ minetest.register_chatcommand("mirror_on", {
         if not valid_axes[axis] then
             return false, "not a valid axis: " .. axis
         end
-        local player_data = build_mirror[name]
+        local player_data = build_mirror.mirrors[name]
         if not player_data then
             return false, "choose a mirror-position first with /mirror_here"
         end
@@ -45,7 +45,7 @@ minetest.register_chatcommand("mirror_off", {
         if not valid_axes[axis] then
             return false, "not a valid axis: " .. axis
         end
-        local player_data = build_mirror[name]
+        local player_data = build_mirror.mirrors[name]
         if not player_data then
             return false, "choose a mirror-position first with /mirror_here"
         end

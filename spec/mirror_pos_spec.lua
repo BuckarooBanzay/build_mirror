@@ -33,7 +33,6 @@ describe("mirror_pos", function()
 			assert.equal(set.expected.x, mirrored_pos.x, msg)
 			assert.equal(set.expected.y, mirrored_pos.y, msg)
 			assert.equal(set.expected.z, mirrored_pos.z, msg)
-			assert.equal(set.expected.param2, mirrored_pos.param2, msg)
 		end
 	end)
 end)

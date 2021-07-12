@@ -58,7 +58,7 @@ describe("get_mirrored_positions", function()
 			for _, pos in ipairs(set.expected) do
 				expected_positions[pos_to_string(pos)] = true
 			end
-			local list = build_mirror.get_mirrored_positions(set.pos, set.mirror_pos, set.axes)
+			local list = build_mirror.get_mirrored_positions(set.pos, {}, set.mirror_pos, set.axes)
 			assert.equal(#set.expected, #list, msg)
 			for j, pos in ipairs(list) do
 				assert.equal(true, expected_positions[pos_to_string(pos)], msg .. " expected#" .. j)
