@@ -12,3 +12,7 @@ dofile(MP.."/hud.lua")
 dofile(MP.."/privs.lua")
 dofile(MP.."/chatcommands.lua")
 dofile(MP.."/override.lua")
+
+if minetest.get_modpath("worldedit") then
+    dofile(MP.."/worldedit.lua")
+end

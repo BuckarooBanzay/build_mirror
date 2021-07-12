@@ -1,6 +1,7 @@
 
 globals = {
-	"build_mirror"
+	"build_mirror",
+	"worldedit"
 }
 
 read_globals = {
@@ -17,6 +18,5 @@ read_globals = {
 	"mineunit",
 
 	-- deps
-	"minetest",
-	"worldedit"
+	"minetest"
 }
