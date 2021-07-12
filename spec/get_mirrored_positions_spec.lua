@@ -2,6 +2,7 @@ _G.build_mirror = {}
 _G.minetest = {
 	registered_nodes = {}
 }
+dofile("./rotate_node.lua")
 dofile("./functions.lua")
 
 local function pos_to_string(pos)

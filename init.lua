@@ -7,6 +7,7 @@ build_mirror = {
 local MP = minetest.get_modpath("build_mirror")
 
 dofile(MP.."/functions.lua")
+dofile(MP.."/rotate_node.lua")
 dofile(MP.."/hud.lua")
 dofile(MP.."/privs.lua")
 dofile(MP.."/chatcommands.lua")
